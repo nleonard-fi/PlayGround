@@ -1,0 +1,44 @@
+{
+  "profiles": {
+    "NAGUID For EU Target": {
+      "commandName": "Project",
+      "commandLineArgs": "328b8d15-0419-4849-bd77-a3a3fec52602\r\nbzdcxoqiwisuqpzl\r\nb5c98b88-d97a-4049-97e8-eb73bc76a08c\r\nb6d89306-ab1b-41f8-a221-0f82160f37f7\r\nhttps://eu.docusign.net/api/3.0/dsapi.asmx"
+    },
+    "Nick - NAGUID With NA Password": {
+      "commandName": "Project",
+      "commandLineArgs": "b8c6230a-498f-45aa-a66b-6cede3837813\r\nswfpegjgfcdxigrv\r\nb5c98b88-d97a-4049-97e8-eb73bc76a08c\r\nb6d89306-ab1b-41f8-a221-0f82160f37f7\r\nhttps://eu.docusign.net/api/3.0/dsapi.asmx"
+    },
+    "Nick - NAGUID With EU Password": {
+      "commandName": "Project",
+      "commandLineArgs": "b8c6230a-498f-45aa-a66b-6cede3837813\r\naobqlilqapwuyicj\r\nb5c98b88-d97a-4049-97e8-eb73bc76a08c\r\nb6d89306-ab1b-41f8-a221-0f82160f37f7\r\nhttps://eu.docusign.net/api/3.0/dsapi.asmx"
+    },
+    "Nick - EUGUID With NA Password": {
+      "commandName": "Project",
+      "commandLineArgs": "6750b9b8-8cfb-4968-9aa4-aaebc8f62672\r\nswfpegjgfcdxigrv\r\nb5c98b88-d97a-4049-97e8-eb73bc76a08c\r\nb6d89306-ab1b-41f8-a221-0f82160f37f7\r\nhttps://eu.docusign.net/api/3.0/dsapi.asmx"
+    },
+    "Nick - EUGUID With EU Password": {
+      "commandName": "Project",
+      "commandLineArgs": "6750b9b8-8cfb-4968-9aa4-aaebc8f62672\r\naobqlilqapwuyicj\r\nb5c98b88-d97a-4049-97e8-eb73bc76a08c\r\nb6d89306-ab1b-41f8-a221-0f82160f37f7\r\nhttps://eu.docusign.net/api/3.0/dsapi.asmx"
+    },
+    "NAGUID For NA Target": {
+      "commandName": "Project",
+      "commandLineArgs": "328b8d15-0419-4849-bd77-a3a3fec52602\r\nbzdcxoqiwisuqpzl\r\nc6e0c20e-e21d-4b9b-9e2a-d646a2a3fe16\r\n8b892bb5-1e55-4867-a7d2-92b24b64889b\r\nhttps://na2.docusign.net/api/3.0/dsapi.asmx"
+    },
+    "EUGUID For EU Target": {
+      "commandName": "Project",
+      "commandLineArgs": "06964da6-307d-4e2f-ade5-e1f1007c7a28\r\nbzdcxoqiwisuqpzl\r\nb5c98b88-d97a-4049-97e8-eb73bc76a08c\r\nb6d89306-ab1b-41f8-a221-0f82160f37f7\r\nhttps://eu.docusign.net/api/3.0/dsapi.asmx"
+    },
+    "Nick - NAGUID For NA Target": {
+      "commandName": "Project",
+      "commandLineArgs": "b8c6230a-498f-45aa-a66b-6cede3837813\r\nbjhqxptdzfflmgwd\r\nc6e0c20e-e21d-4b9b-9e2a-d646a2a3fe16\r\n8b892bb5-1e55-4867-a7d2-92b24b64889b\r\nhttps://na2.docusign.net/api/3.0/dsapi.asmx"
+    },
+    "Profile 1": {
+      "commandName": "Project",
+      "commandLineArgs": "6750b9b8-8cfb-4968-9aa4-aaebc8f62672\r\nkiwlnjyakeotettp\r\nc6e0c20e-e21d-4b9b-9e2a-d646a2a3fe16\r\n8b892bb5-1e55-4867-a7d2-92b24b64889b\r\nhttps://na2.docusign.net/api/3.0/dsapi.asmx"
+    },
+    "Profile 2": {
+      "commandName": "Project",
+      "commandLineArgs": "b8c6230a-498f-45aa-a66b-6cede3837813\r\nkiwlnjyakeotettp\r\nc6e0c20e-e21d-4b9b-9e2a-d646a2a3fe16\r\n8b892bb5-1e55-4867-a7d2-92b24b64889b\r\nhttps://na2.docusign.net/api/3.0/dsapi.asmx"
+    }
+  }
+}
