@@ -1,0 +1,20 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "https://soa-dev.fidev.com/SecurityManagement/SecurityManagement.asmx",
+      "https://soa-qa.fi.com/SecurityManagement/SecurityManagement.asmx",
+      "https://soa.fi.com/SecurityManagement/SecurityManagement.asmx"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "internalTypeAccess": true,
+    "namespaceMappings": [
+      "*, SecurityManagementSoa"
+    ],
+    "sync": true,
+    "targetFramework": "netstandard2.0",
+    "typeReuseMode": "All"
+  }
+}
