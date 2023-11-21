@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FI.SecurityManagment.SecurityManagementSoa
+namespace FI.ECM.SecurityManagement.SecurityManagementSoa
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fisherclients.com/", ConfigurationName="FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fisherclients.com/", ConfigurationName="FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap")]
     internal interface SecurityManagementSoap
     {
         
@@ -20,18 +20,18 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/Login", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.LoginResponse Login(FI.SecurityManagment.SecurityManagementSoa.LoginRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.LoginResponse Login(FI.ECM.SecurityManagement.SecurityManagementSoa.LoginRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/Login", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.LoginResponse> LoginAsync(FI.SecurityManagment.SecurityManagementSoa.LoginRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.LoginResponse> LoginAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.LoginRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/RequestToken", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.SecurityData RequestToken(string sServiceAccount, string sPassword);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityData RequestToken(string sServiceAccount, string sPassword);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/RequestToken", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.SecurityData> RequestTokenAsync(string sServiceAccount, string sPassword);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityData> RequestTokenAsync(string sServiceAccount, string sPassword);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/Ping", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -45,100 +45,100 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetEmployeeProfile", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileResponse GetEmployeeProfile(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileResponse GetEmployeeProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetEmployeeProfile", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileResponse> GetEmployeeProfileAsync(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileResponse> GetEmployeeProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileRequest request);
         
         // CODEGEN: Generating message contract since message GetEmployeeAndDirectManagerRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetEmployeeAndDirectManager", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse GetEmployeeAndDirectManager(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse GetEmployeeAndDirectManager(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetEmployeeAndDirectManager", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse> GetEmployeeAndDirectManagerAsync(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse> GetEmployeeAndDirectManagerAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest request);
         
         // CODEGEN: Generating message contract since message SearchEmployeeProfileRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/SearchEmployeeProfile", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileResponse SearchEmployeeProfile(FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileResponse SearchEmployeeProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/SearchEmployeeProfile", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileResponse> SearchEmployeeProfileAsync(FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileResponse> SearchEmployeeProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileRequest request);
         
         // CODEGEN: Generating message contract since message GetEmployeeGroupTLsRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetEmployeeGroupTLs", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsResponse GetEmployeeGroupTLs(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsResponse GetEmployeeGroupTLs(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetEmployeeGroupTLs", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsResponse> GetEmployeeGroupTLsAsync(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsResponse> GetEmployeeGroupTLsAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsRequest request);
         
         // CODEGEN: Generating message contract since message SearchServiceProfileRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/SearchServiceProfile", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileResponse SearchServiceProfile(FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileResponse SearchServiceProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/SearchServiceProfile", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileResponse> SearchServiceProfileAsync(FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileResponse> SearchServiceProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileRequest request);
         
         // CODEGEN: Generating message contract since message GetRoleMembersRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetRoleMembers", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersResponse GetRoleMembers(FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersResponse GetRoleMembers(FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetRoleMembers", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersResponse> GetRoleMembersAsync(FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersResponse> GetRoleMembersAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersRequest request);
         
         // CODEGEN: Generating message contract since message GetFIIMACApplicationRoleRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetFIIMACApplicationRole", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleResponse GetFIIMACApplicationRole(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleResponse GetFIIMACApplicationRole(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetFIIMACApplicationRole", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleResponse> GetFIIMACApplicationRoleAsync(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleResponse> GetFIIMACApplicationRoleAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleRequest request);
         
         // CODEGEN: Generating message contract since message GetFIIMACApplicationInnerRoleRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetFIIMACApplicationInnerRole", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse GetFIIMACApplicationInnerRole(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse GetFIIMACApplicationInnerRole(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetFIIMACApplicationInnerRole", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse> GetFIIMACApplicationInnerRoleAsync(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse> GetFIIMACApplicationInnerRoleAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest request);
         
         // CODEGEN: Generating message contract since message GetFIIMACRolesForIndividualRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetFIIMACRolesForIndividual", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse GetFIIMACRolesForIndividual(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse GetFIIMACRolesForIndividual(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetFIIMACRolesForIndividual", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse> GetFIIMACRolesForIndividualAsync(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse> GetFIIMACRolesForIndividualAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest request);
         
         // CODEGEN: Generating message contract since message GetPersonProfileRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetPersonProfile", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileResponse GetPersonProfile(FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileResponse GetPersonProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetPersonProfile", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileResponse> GetPersonProfileAsync(FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileResponse> GetPersonProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileRequest request);
         
         // CODEGEN: Generating message contract since message GetEmployeeHRProfileRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetEmployeeHRProfile", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BaseData))]
-        FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileResponse GetEmployeeHRProfile(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileRequest request);
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileResponse GetEmployeeHRProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.fisherclients.com/GetEmployeeHRProfile", ReplyAction="*")]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileResponse> GetEmployeeHRProfileAsync(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileRequest request);
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileResponse> GetEmployeeHRProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileRequest request);
     }
     
     /// <remarks/>
@@ -2011,7 +2011,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
         public string sNetworkID;
@@ -2023,7 +2023,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         {
         }
         
-        public LoginRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID, string sPassword)
+        public LoginRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID, string sPassword)
         {
             this.TokenHeader = TokenHeader;
             this.sNetworkID = sNetworkID;
@@ -2039,13 +2039,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.SessionData LoginResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.SessionData LoginResult;
         
         public LoginResponse()
         {
         }
         
-        public LoginResponse(FI.SecurityManagment.SecurityManagementSoa.SessionData LoginResult)
+        public LoginResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.SessionData LoginResult)
         {
             this.LoginResult = LoginResult;
         }
@@ -2059,7 +2059,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
         public string sNetworkLogin;
@@ -2068,7 +2068,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         {
         }
         
-        public GetEmployeeProfileRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public GetEmployeeProfileRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
             this.TokenHeader = TokenHeader;
             this.sNetworkLogin = sNetworkLogin;
@@ -2083,13 +2083,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.EmployeeData GetEmployeeProfileResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.EmployeeData GetEmployeeProfileResult;
         
         public GetEmployeeProfileResponse()
         {
         }
         
-        public GetEmployeeProfileResponse(FI.SecurityManagment.SecurityManagementSoa.EmployeeData GetEmployeeProfileResult)
+        public GetEmployeeProfileResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.EmployeeData GetEmployeeProfileResult)
         {
             this.GetEmployeeProfileResult = GetEmployeeProfileResult;
         }
@@ -2103,7 +2103,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
         public string sNetworkLogin;
@@ -2112,7 +2112,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         {
         }
         
-        public GetEmployeeAndDirectManagerRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public GetEmployeeAndDirectManagerRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
             this.TokenHeader = TokenHeader;
             this.sNetworkLogin = sNetworkLogin;
@@ -2127,13 +2127,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.ManagerData GetEmployeeAndDirectManagerResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.ManagerData GetEmployeeAndDirectManagerResult;
         
         public GetEmployeeAndDirectManagerResponse()
         {
         }
         
-        public GetEmployeeAndDirectManagerResponse(FI.SecurityManagment.SecurityManagementSoa.ManagerData GetEmployeeAndDirectManagerResult)
+        public GetEmployeeAndDirectManagerResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.ManagerData GetEmployeeAndDirectManagerResult)
         {
             this.GetEmployeeAndDirectManagerResult = GetEmployeeAndDirectManagerResult;
         }
@@ -2147,16 +2147,16 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.SearchData ObjSearchData;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.SearchData ObjSearchData;
         
         public SearchEmployeeProfileRequest()
         {
         }
         
-        public SearchEmployeeProfileRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, FI.SecurityManagment.SecurityManagementSoa.SearchData ObjSearchData)
+        public SearchEmployeeProfileRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, FI.ECM.SecurityManagement.SecurityManagementSoa.SearchData ObjSearchData)
         {
             this.TokenHeader = TokenHeader;
             this.ObjSearchData = ObjSearchData;
@@ -2171,13 +2171,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.SearchResultDataList SearchEmployeeProfileResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.SearchResultDataList SearchEmployeeProfileResult;
         
         public SearchEmployeeProfileResponse()
         {
         }
         
-        public SearchEmployeeProfileResponse(FI.SecurityManagment.SecurityManagementSoa.SearchResultDataList SearchEmployeeProfileResult)
+        public SearchEmployeeProfileResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchResultDataList SearchEmployeeProfileResult)
         {
             this.SearchEmployeeProfileResult = SearchEmployeeProfileResult;
         }
@@ -2191,7 +2191,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
         public string sNetworkLogin;
@@ -2200,7 +2200,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         {
         }
         
-        public GetEmployeeGroupTLsRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public GetEmployeeGroupTLsRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
             this.TokenHeader = TokenHeader;
             this.sNetworkLogin = sNetworkLogin;
@@ -2215,13 +2215,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.EmployeeData[] GetEmployeeGroupTLsResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.EmployeeData[] GetEmployeeGroupTLsResult;
         
         public GetEmployeeGroupTLsResponse()
         {
         }
         
-        public GetEmployeeGroupTLsResponse(FI.SecurityManagment.SecurityManagementSoa.EmployeeData[] GetEmployeeGroupTLsResult)
+        public GetEmployeeGroupTLsResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.EmployeeData[] GetEmployeeGroupTLsResult)
         {
             this.GetEmployeeGroupTLsResult = GetEmployeeGroupTLsResult;
         }
@@ -2235,16 +2235,16 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.SearchData ObjSearchData;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.SearchData ObjSearchData;
         
         public SearchServiceProfileRequest()
         {
         }
         
-        public SearchServiceProfileRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, FI.SecurityManagment.SecurityManagementSoa.SearchData ObjSearchData)
+        public SearchServiceProfileRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, FI.ECM.SecurityManagement.SecurityManagementSoa.SearchData ObjSearchData)
         {
             this.TokenHeader = TokenHeader;
             this.ObjSearchData = ObjSearchData;
@@ -2259,13 +2259,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.SearchResultDataList SearchServiceProfileResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.SearchResultDataList SearchServiceProfileResult;
         
         public SearchServiceProfileResponse()
         {
         }
         
-        public SearchServiceProfileResponse(FI.SecurityManagment.SecurityManagementSoa.SearchResultDataList SearchServiceProfileResult)
+        public SearchServiceProfileResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchResultDataList SearchServiceProfileResult)
         {
             this.SearchServiceProfileResult = SearchServiceProfileResult;
         }
@@ -2279,7 +2279,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
         public string sRoleName;
@@ -2288,7 +2288,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         {
         }
         
-        public GetRoleMembersRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sRoleName)
+        public GetRoleMembersRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sRoleName)
         {
             this.TokenHeader = TokenHeader;
             this.sRoleName = sRoleName;
@@ -2303,13 +2303,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.RoleMemberDataList GetRoleMembersResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.RoleMemberDataList GetRoleMembersResult;
         
         public GetRoleMembersResponse()
         {
         }
         
-        public GetRoleMembersResponse(FI.SecurityManagment.SecurityManagementSoa.RoleMemberDataList GetRoleMembersResult)
+        public GetRoleMembersResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.RoleMemberDataList GetRoleMembersResult)
         {
             this.GetRoleMembersResult = GetRoleMembersResult;
         }
@@ -2323,13 +2323,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         public GetFIIMACApplicationRoleRequest()
         {
         }
         
-        public GetFIIMACApplicationRoleRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader)
+        public GetFIIMACApplicationRoleRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader)
         {
             this.TokenHeader = TokenHeader;
         }
@@ -2343,13 +2343,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationRoleResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationRoleResult;
         
         public GetFIIMACApplicationRoleResponse()
         {
         }
         
-        public GetFIIMACApplicationRoleResponse(FI.SecurityManagment.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationRoleResult)
+        public GetFIIMACApplicationRoleResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationRoleResult)
         {
             this.GetFIIMACApplicationRoleResult = GetFIIMACApplicationRoleResult;
         }
@@ -2363,7 +2363,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
         public string sRole;
@@ -2372,7 +2372,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         {
         }
         
-        public GetFIIMACApplicationInnerRoleRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sRole)
+        public GetFIIMACApplicationInnerRoleRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sRole)
         {
             this.TokenHeader = TokenHeader;
             this.sRole = sRole;
@@ -2387,13 +2387,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationInnerRoleResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationInnerRoleResult;
         
         public GetFIIMACApplicationInnerRoleResponse()
         {
         }
         
-        public GetFIIMACApplicationInnerRoleResponse(FI.SecurityManagment.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationInnerRoleResult)
+        public GetFIIMACApplicationInnerRoleResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationInnerRoleResult)
         {
             this.GetFIIMACApplicationInnerRoleResult = GetFIIMACApplicationInnerRoleResult;
         }
@@ -2407,7 +2407,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
         public string sNetworkID;
@@ -2416,7 +2416,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         {
         }
         
-        public GetFIIMACRolesForIndividualRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID)
+        public GetFIIMACRolesForIndividualRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID)
         {
             this.TokenHeader = TokenHeader;
             this.sNetworkID = sNetworkID;
@@ -2431,13 +2431,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.UserRoleDataList GetFIIMACRolesForIndividualResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.UserRoleDataList GetFIIMACRolesForIndividualResult;
         
         public GetFIIMACRolesForIndividualResponse()
         {
         }
         
-        public GetFIIMACRolesForIndividualResponse(FI.SecurityManagment.SecurityManagementSoa.UserRoleDataList GetFIIMACRolesForIndividualResult)
+        public GetFIIMACRolesForIndividualResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.UserRoleDataList GetFIIMACRolesForIndividualResult)
         {
             this.GetFIIMACRolesForIndividualResult = GetFIIMACRolesForIndividualResult;
         }
@@ -2451,7 +2451,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
         public string sNetworkLogin;
@@ -2460,7 +2460,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         {
         }
         
-        public GetPersonProfileRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public GetPersonProfileRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
             this.TokenHeader = TokenHeader;
             this.sNetworkLogin = sNetworkLogin;
@@ -2475,13 +2475,13 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.ProfileData GetPersonProfileResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.ProfileData GetPersonProfileResult;
         
         public GetPersonProfileResponse()
         {
         }
         
-        public GetPersonProfileResponse(FI.SecurityManagment.SecurityManagementSoa.ProfileData GetPersonProfileResult)
+        public GetPersonProfileResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.ProfileData GetPersonProfileResult)
         {
             this.GetPersonProfileResult = GetPersonProfileResult;
         }
@@ -2495,7 +2495,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fisherclients.com/")]
-        public FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
         public string sNetworkLogin;
@@ -2504,7 +2504,7 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         {
         }
         
-        public GetEmployeeHRProfileRequest(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public GetEmployeeHRProfileRequest(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
             this.TokenHeader = TokenHeader;
             this.sNetworkLogin = sNetworkLogin;
@@ -2519,26 +2519,26 @@ namespace FI.SecurityManagment.SecurityManagementSoa
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fisherclients.com/", Order=0)]
-        public FI.SecurityManagment.SecurityManagementSoa.EmployeeHRData GetEmployeeHRProfileResult;
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.EmployeeHRData GetEmployeeHRProfileResult;
         
         public GetEmployeeHRProfileResponse()
         {
         }
         
-        public GetEmployeeHRProfileResponse(FI.SecurityManagment.SecurityManagementSoa.EmployeeHRData GetEmployeeHRProfileResult)
+        public GetEmployeeHRProfileResponse(FI.ECM.SecurityManagement.SecurityManagementSoa.EmployeeHRData GetEmployeeHRProfileResult)
         {
             this.GetEmployeeHRProfileResult = GetEmployeeHRProfileResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    internal interface SecurityManagementSoapChannel : FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap, System.ServiceModel.IClientChannel
+    internal interface SecurityManagementSoapChannel : FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    internal partial class SecurityManagementSoapClient : System.ServiceModel.ClientBase<FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap>, FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap
+    internal partial class SecurityManagementSoapClient : System.ServiceModel.ClientBase<FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap>, FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap
     {
         
         /// <summary>
@@ -2548,8 +2548,8 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         /// <param name="clientCredentials">The client credentials</param>
         static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
         
-        public SecurityManagementSoapClient(EndpointConfiguration endpointConfiguration) : 
-                base(SecurityManagementSoapClient.GetBindingForEndpoint(endpointConfiguration), SecurityManagementSoapClient.GetEndpointAddress(endpointConfiguration))
+        public SecurityManagementSoapClient(EndpointConfiguration endpointConfiguration, EnvironmentConfiguration environmentConfiguration) : 
+                base(SecurityManagementSoapClient.GetBindingForEndpoint(endpointConfiguration), SecurityManagementSoapClient.GetEndpointAddress(endpointConfiguration, environmentConfiguration))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
@@ -2575,42 +2575,42 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.LoginResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.Login(FI.SecurityManagment.SecurityManagementSoa.LoginRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.LoginResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.Login(FI.ECM.SecurityManagement.SecurityManagementSoa.LoginRequest request)
         {
             return base.Channel.Login(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.SessionData Login(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID, string sPassword)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.SessionData Login(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID, string sPassword)
         {
-            FI.SecurityManagment.SecurityManagementSoa.LoginRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.LoginRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.LoginRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.LoginRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkID = sNetworkID;
             inValue.sPassword = sPassword;
-            FI.SecurityManagment.SecurityManagementSoa.LoginResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).Login(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.LoginResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).Login(inValue);
             return retVal.LoginResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.LoginResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.LoginAsync(FI.SecurityManagment.SecurityManagementSoa.LoginRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.LoginResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.LoginAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.LoginRequest request)
         {
             return base.Channel.LoginAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.LoginResponse> LoginAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID, string sPassword)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.LoginResponse> LoginAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID, string sPassword)
         {
-            FI.SecurityManagment.SecurityManagementSoa.LoginRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.LoginRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.LoginRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.LoginRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkID = sNetworkID;
             inValue.sPassword = sPassword;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).LoginAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).LoginAsync(inValue);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.SecurityData RequestToken(string sServiceAccount, string sPassword)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityData RequestToken(string sServiceAccount, string sPassword)
         {
             return base.Channel.RequestToken(sServiceAccount, sPassword);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.SecurityData> RequestTokenAsync(string sServiceAccount, string sPassword)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityData> RequestTokenAsync(string sServiceAccount, string sPassword)
         {
             return base.Channel.RequestTokenAsync(sServiceAccount, sPassword);
         }
@@ -2626,320 +2626,320 @@ namespace FI.SecurityManagment.SecurityManagementSoa
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeProfile(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileRequest request)
         {
             return base.Channel.GetEmployeeProfile(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.EmployeeData GetEmployeeProfile(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.EmployeeData GetEmployeeProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeProfile(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeProfile(inValue);
             return retVal.GetEmployeeProfileResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeProfileAsync(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileRequest request)
         {
             return base.Channel.GetEmployeeProfileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileResponse> GetEmployeeProfileAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileResponse> GetEmployeeProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetEmployeeProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeProfileAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeProfileAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeAndDirectManager(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeAndDirectManager(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest request)
         {
             return base.Channel.GetEmployeeAndDirectManager(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.ManagerData GetEmployeeAndDirectManager(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.ManagerData GetEmployeeAndDirectManager(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeAndDirectManager(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeAndDirectManager(inValue);
             return retVal.GetEmployeeAndDirectManagerResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeAndDirectManagerAsync(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeAndDirectManagerAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest request)
         {
             return base.Channel.GetEmployeeAndDirectManagerAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse> GetEmployeeAndDirectManagerAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerResponse> GetEmployeeAndDirectManagerAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeAndDirectManagerRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeAndDirectManagerAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeAndDirectManagerAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.SearchEmployeeProfile(FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.SearchEmployeeProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileRequest request)
         {
             return base.Channel.SearchEmployeeProfile(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.SearchResultDataList SearchEmployeeProfile(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, FI.SecurityManagment.SecurityManagementSoa.SearchData ObjSearchData)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.SearchResultDataList SearchEmployeeProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, FI.ECM.SecurityManagement.SecurityManagementSoa.SearchData ObjSearchData)
         {
-            FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.ObjSearchData = ObjSearchData;
-            FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).SearchEmployeeProfile(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).SearchEmployeeProfile(inValue);
             return retVal.SearchEmployeeProfileResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.SearchEmployeeProfileAsync(FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.SearchEmployeeProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileRequest request)
         {
             return base.Channel.SearchEmployeeProfileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileResponse> SearchEmployeeProfileAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, FI.SecurityManagment.SecurityManagementSoa.SearchData ObjSearchData)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileResponse> SearchEmployeeProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, FI.ECM.SecurityManagement.SecurityManagementSoa.SearchData ObjSearchData)
         {
-            FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.SearchEmployeeProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.SearchEmployeeProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.ObjSearchData = ObjSearchData;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).SearchEmployeeProfileAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).SearchEmployeeProfileAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeGroupTLs(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeGroupTLs(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsRequest request)
         {
             return base.Channel.GetEmployeeGroupTLs(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.EmployeeData[] GetEmployeeGroupTLs(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.EmployeeData[] GetEmployeeGroupTLs(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeGroupTLs(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeGroupTLs(inValue);
             return retVal.GetEmployeeGroupTLsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeGroupTLsAsync(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeGroupTLsAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsRequest request)
         {
             return base.Channel.GetEmployeeGroupTLsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsResponse> GetEmployeeGroupTLsAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsResponse> GetEmployeeGroupTLsAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetEmployeeGroupTLsRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeGroupTLsRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeGroupTLsAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeGroupTLsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.SearchServiceProfile(FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.SearchServiceProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileRequest request)
         {
             return base.Channel.SearchServiceProfile(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.SearchResultDataList SearchServiceProfile(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, FI.SecurityManagment.SecurityManagementSoa.SearchData ObjSearchData)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.SearchResultDataList SearchServiceProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, FI.ECM.SecurityManagement.SecurityManagementSoa.SearchData ObjSearchData)
         {
-            FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.ObjSearchData = ObjSearchData;
-            FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).SearchServiceProfile(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).SearchServiceProfile(inValue);
             return retVal.SearchServiceProfileResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.SearchServiceProfileAsync(FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.SearchServiceProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileRequest request)
         {
             return base.Channel.SearchServiceProfileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileResponse> SearchServiceProfileAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, FI.SecurityManagment.SecurityManagementSoa.SearchData ObjSearchData)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileResponse> SearchServiceProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, FI.ECM.SecurityManagement.SecurityManagementSoa.SearchData ObjSearchData)
         {
-            FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.SearchServiceProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.SearchServiceProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.ObjSearchData = ObjSearchData;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).SearchServiceProfileAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).SearchServiceProfileAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetRoleMembers(FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetRoleMembers(FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersRequest request)
         {
             return base.Channel.GetRoleMembers(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.RoleMemberDataList GetRoleMembers(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sRoleName)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.RoleMemberDataList GetRoleMembers(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sRoleName)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sRoleName = sRoleName;
-            FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetRoleMembers(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetRoleMembers(inValue);
             return retVal.GetRoleMembersResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetRoleMembersAsync(FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetRoleMembersAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersRequest request)
         {
             return base.Channel.GetRoleMembersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersResponse> GetRoleMembersAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sRoleName)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersResponse> GetRoleMembersAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sRoleName)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetRoleMembersRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetRoleMembersRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sRoleName = sRoleName;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetRoleMembersAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetRoleMembersAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACApplicationRole(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACApplicationRole(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleRequest request)
         {
             return base.Channel.GetFIIMACApplicationRole(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationRole(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationRole(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleRequest();
             inValue.TokenHeader = TokenHeader;
-            FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACApplicationRole(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACApplicationRole(inValue);
             return retVal.GetFIIMACApplicationRoleResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACApplicationRoleAsync(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACApplicationRoleAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleRequest request)
         {
             return base.Channel.GetFIIMACApplicationRoleAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleResponse> GetFIIMACApplicationRoleAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleResponse> GetFIIMACApplicationRoleAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationRoleRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationRoleRequest();
             inValue.TokenHeader = TokenHeader;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACApplicationRoleAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACApplicationRoleAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACApplicationInnerRole(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACApplicationInnerRole(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest request)
         {
             return base.Channel.GetFIIMACApplicationInnerRole(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationInnerRole(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sRole)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.ApplicationRoleList GetFIIMACApplicationInnerRole(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sRole)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sRole = sRole;
-            FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACApplicationInnerRole(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACApplicationInnerRole(inValue);
             return retVal.GetFIIMACApplicationInnerRoleResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACApplicationInnerRoleAsync(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACApplicationInnerRoleAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest request)
         {
             return base.Channel.GetFIIMACApplicationInnerRoleAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse> GetFIIMACApplicationInnerRoleAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sRole)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleResponse> GetFIIMACApplicationInnerRoleAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sRole)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACApplicationInnerRoleRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sRole = sRole;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACApplicationInnerRoleAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACApplicationInnerRoleAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACRolesForIndividual(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACRolesForIndividual(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest request)
         {
             return base.Channel.GetFIIMACRolesForIndividual(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.UserRoleDataList GetFIIMACRolesForIndividual(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.UserRoleDataList GetFIIMACRolesForIndividual(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkID = sNetworkID;
-            FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACRolesForIndividual(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACRolesForIndividual(inValue);
             return retVal.GetFIIMACRolesForIndividualResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACRolesForIndividualAsync(FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetFIIMACRolesForIndividualAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest request)
         {
             return base.Channel.GetFIIMACRolesForIndividualAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse> GetFIIMACRolesForIndividualAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualResponse> GetFIIMACRolesForIndividualAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkID)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetFIIMACRolesForIndividualRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkID = sNetworkID;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACRolesForIndividualAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetFIIMACRolesForIndividualAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetPersonProfile(FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetPersonProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileRequest request)
         {
             return base.Channel.GetPersonProfile(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.ProfileData GetPersonProfile(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.ProfileData GetPersonProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetPersonProfile(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetPersonProfile(inValue);
             return retVal.GetPersonProfileResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetPersonProfileAsync(FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetPersonProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileRequest request)
         {
             return base.Channel.GetPersonProfileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileResponse> GetPersonProfileAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileResponse> GetPersonProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetPersonProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetPersonProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetPersonProfileAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetPersonProfileAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileResponse FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeHRProfile(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileRequest request)
+        FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileResponse FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeHRProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileRequest request)
         {
             return base.Channel.GetEmployeeHRProfile(request);
         }
         
-        public FI.SecurityManagment.SecurityManagementSoa.EmployeeHRData GetEmployeeHRProfile(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public FI.ECM.SecurityManagement.SecurityManagementSoa.EmployeeHRData GetEmployeeHRProfile(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileResponse retVal = ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeHRProfile(inValue);
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileResponse retVal = ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeHRProfile(inValue);
             return retVal.GetEmployeeHRProfileResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileResponse> FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeHRProfileAsync(FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileRequest request)
+        System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileResponse> FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap.GetEmployeeHRProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileRequest request)
         {
             return base.Channel.GetEmployeeHRProfileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileResponse> GetEmployeeHRProfileAsync(FI.SecurityManagment.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
+        public System.Threading.Tasks.Task<FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileResponse> GetEmployeeHRProfileAsync(FI.ECM.SecurityManagement.SecurityManagementSoa.TokenHeader TokenHeader, string sNetworkLogin)
         {
-            FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileRequest inValue = new FI.SecurityManagment.SecurityManagementSoa.GetEmployeeHRProfileRequest();
+            FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileRequest inValue = new FI.ECM.SecurityManagement.SecurityManagementSoa.GetEmployeeHRProfileRequest();
             inValue.TokenHeader = TokenHeader;
             inValue.sNetworkLogin = sNetworkLogin;
-            return ((FI.SecurityManagment.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeHRProfileAsync(inValue);
+            return ((FI.ECM.SecurityManagement.SecurityManagementSoa.SecurityManagementSoap)(this)).GetEmployeeHRProfileAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
@@ -2960,8 +2960,15 @@ namespace FI.SecurityManagment.SecurityManagementSoa
                 result.MaxBufferSize = int.MaxValue;
                 result.ReaderQuotas = System.Xml.XmlDictionaryReaderQuotas.Max;
                 result.MaxReceivedMessageSize = int.MaxValue;
-                result.AllowCookies = true;
+                result.AllowCookies = false;
+                result.BypassProxyOnLocal = false;
+                result.TextEncoding = System.Text.Encoding.UTF8;
+                result.TransferMode = System.ServiceModel.TransferMode.Buffered;
+                result.UseDefaultWebProxy = true;
                 result.Security.Mode = System.ServiceModel.BasicHttpSecurityMode.Transport;
+                result.Security.Transport.ClientCredentialType = System.ServiceModel.HttpClientCredentialType.Windows;
+                result.Security.Transport.ProxyCredentialType = System.ServiceModel.HttpProxyCredentialType.Windows;
+                result.Security.Message.ClientCredentialType = System.ServiceModel.BasicHttpMessageCredentialType.UserName;
                 return result;
             }
             if ((endpointConfiguration == EndpointConfiguration.SecurityManagementSoap12))
@@ -2971,24 +2978,43 @@ namespace FI.SecurityManagment.SecurityManagementSoa
                 textBindingElement.MessageVersion = System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion.Soap12, System.ServiceModel.Channels.AddressingVersion.None);
                 result.Elements.Add(textBindingElement);
                 System.ServiceModel.Channels.HttpsTransportBindingElement httpsBindingElement = new System.ServiceModel.Channels.HttpsTransportBindingElement();
-                httpsBindingElement.AllowCookies = true;
+                httpsBindingElement.AllowCookies = false;
                 httpsBindingElement.MaxBufferSize = int.MaxValue;
                 httpsBindingElement.MaxReceivedMessageSize = int.MaxValue;
+                httpsBindingElement.BypassProxyOnLocal = false;
+                httpsBindingElement.TransferMode = System.ServiceModel.TransferMode.Buffered;
+                httpsBindingElement.UseDefaultWebProxy = true;
                 result.Elements.Add(httpsBindingElement);
                 return result;
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
         
-        private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
+        private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration, EnvironmentConfiguration environmentConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.SecurityManagementSoap))
+            if ((endpointConfiguration == EndpointConfiguration.SecurityManagementSoap) && environmentConfiguration == EnvironmentConfiguration.FIDEV)
             {
                 return new System.ServiceModel.EndpointAddress("https://soa-dev.fidev.com/SecurityManagement/SecurityManagement.asmx");
             }
-            if ((endpointConfiguration == EndpointConfiguration.SecurityManagementSoap12))
+            if ((endpointConfiguration == EndpointConfiguration.SecurityManagementSoap12) && environmentConfiguration == EnvironmentConfiguration.FIDEV)
             {
                 return new System.ServiceModel.EndpointAddress("https://soa-dev.fidev.com/SecurityManagement/SecurityManagement.asmx");
+            }
+            if (endpointConfiguration == EndpointConfiguration.SecurityManagementSoap && (environmentConfiguration == EnvironmentConfiguration.SIT || environmentConfiguration == EnvironmentConfiguration.UAT))
+            {
+                return new System.ServiceModel.EndpointAddress("https://soa-qa.fi.com/SecurityManagement/SecurityManagement.asmx");
+            }
+            if (endpointConfiguration == EndpointConfiguration.SecurityManagementSoap12 && (environmentConfiguration == EnvironmentConfiguration.SIT || environmentConfiguration == EnvironmentConfiguration.UAT))
+            {
+                return new System.ServiceModel.EndpointAddress("https://soa-qa.fi.com/SecurityManagement/SecurityManagement.asmx");
+            }
+            if (endpointConfiguration == EndpointConfiguration.SecurityManagementSoap && (environmentConfiguration == EnvironmentConfiguration.PROD))
+            {
+                return new System.ServiceModel.EndpointAddress("https://soa.fi.com/SecurityManagement/SecurityManagement.asmx");
+            }
+            if (endpointConfiguration == EndpointConfiguration.SecurityManagementSoap12 && environmentConfiguration == EnvironmentConfiguration.PROD)
+            {
+                return new System.ServiceModel.EndpointAddress("https://soa-qa.fi.com/SecurityManagement/SecurityManagement.asmx");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
