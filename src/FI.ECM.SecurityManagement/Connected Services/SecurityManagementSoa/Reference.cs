@@ -3018,13 +3018,5 @@ namespace FI.ECM.SecurityManagement.SecurityManagementSoa
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
-        
-        public enum EndpointConfiguration
-        {
-            
-            SecurityManagementSoap,
-            
-            SecurityManagementSoap12,
-        }
     }
 }
