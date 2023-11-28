@@ -51,19 +51,18 @@ namespace FI.ECM.SecurityManagement
         /// </summary>
         /// <param name="user">The identifier used to authenticate with the security repository. This is not assumed to be in plain text.</param>
         /// <param name="password">The unique code used to authenticate with the security repository. This is not assumed to be in plain text.</param>
-        /// <param name="decryptor">The <see cref="Delegate"/> used to convert <paramref name="user"/> and <paramref name="password"/> to their 
-        /// plain text values.</param>
+        /// <param name="decryptor">The <see cref="Delegate"/> used to convert <paramref name="user"/> and <paramref name="password"/> to their plain text values.</param>
         /// <exception cref="ArgumentNullException">Thrown if <paramref name="user"/>, <paramref name="password"/>, and <paramref name="decryptor"/> are null
         /// or invalid.</exception>
         public CredentialInfo(string user, string password, Func<string, string> decryptor)
         {
-            if (string.IsNullOrEmpty(user)) throw new ArgumentNullException(nameof(user), "The user is required to connect to the repository.");
-            if (string.IsNullOrWhiteSpace(password)) throw new ArgumentNullException(nameof(password), "The password is required to connect to the repository.");
+            if (string.IsNullOrWhiteSpace(user)) throw new ArgumentNullException(nameof(user), "The parameter is required to connect to the repository.");
+            if (string.IsNullOrWhiteSpace(password)) throw new ArgumentNullException(nameof(password), "The parameter is required to connect to the repository.");
 
             User = user;
             Password = password;
             IsEncrypted = true;
-            Decryptor = decryptor ?? throw new ArgumentNullException(nameof(password), "The decryptor is required to convert the security credentials to plain text values.");
+            Decryptor = decryptor ?? throw new ArgumentNullException(nameof(decryptor), "The parameter is required to convert the security credentials to plain text values.");
         }
     }
 }

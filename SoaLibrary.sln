@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D35399CD-911
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FI.ECM.SecurityManagement", "src\FI.ECM.SecurityManagement\FI.ECM.SecurityManagement.csproj", "{CF25BC8C-A2BB-4A47-9332-B6D97486618D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1A88AD8E-E9C9-482A-9037-BD82434B197D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FI.ECM.SecurityManagment.Tests", "tests\FI.ECM.SecurityManagment.Tests\FI.ECM.SecurityManagment.Tests.csproj", "{B652E228-C640-4175-A241-8AF321B98D5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{CF25BC8C-A2BB-4A47-9332-B6D97486618D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF25BC8C-A2BB-4A47-9332-B6D97486618D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF25BC8C-A2BB-4A47-9332-B6D97486618D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B652E228-C640-4175-A241-8AF321B98D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B652E228-C640-4175-A241-8AF321B98D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B652E228-C640-4175-A241-8AF321B98D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B652E228-C640-4175-A241-8AF321B98D5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CF25BC8C-A2BB-4A47-9332-B6D97486618D} = {D35399CD-9118-4697-9472-2A88DB626038}
+		{B652E228-C640-4175-A241-8AF321B98D5B} = {1A88AD8E-E9C9-482A-9037-BD82434B197D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39EE4EC4-3A6A-4100-826F-63FE03A4633A}
