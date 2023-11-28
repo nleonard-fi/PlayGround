@@ -1,51 +1,69 @@
 ﻿using System;
-using System.Security;
-using FI.ECM.Security.Decryption;
-using FI.ECM.Security.Decryption.Legacy;
 
 namespace FI.ECM.SecurityManagement
 {
     /// <summary>
-    /// Credentials required to connect to the security repository.
+    /// A class representing credentials required to connect to the security repository.
     /// </summary>
-    public readonly struct CredentialInfo
+    public sealed class CredentialInfo
     {
+        /// <summary>
+        /// Gets the identifier used to authenticate with the security repository.
+        /// </summary>
         public string User { get; }
 
+        /// <summary>
+        /// Gets the code used to authenticate with the security repository.
+        /// </summary>
         public string Password { get; }
 
+        /// <summary>
+        /// Indicates whether User and Password are plain text or encrypted.
+        /// </summary>
         public bool IsEncrypted { get; }
 
-        public IDecryptor Decryptor { get; }
+        /// <summary>
+        /// Gets the function used to decrypt the User and Password values if they are encrypted as indicated by the IsEncrypted property.
+        /// </summary>
+        public Func<string, string> Decryptor { get; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CredentialInfo"/> structure to the passed <paramref name="user"/> and <paramref name="password"/> values.
+        /// Initializes a new instance of the <see cref="CredentialInfo"/> class with the passed <paramref name="user"/> and <paramref name="password"/> values.
         /// These values are assumed to be unencrypted and in plain text.
         /// </summary>
-        /// <param name="user">The </param>
-        /// <param name="password"></param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <param name="user">The identifier used to authenticate with the security repository.</param>
+        /// <param name="password">The unique code used to authenticate with the security repository.</param>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="user"/> or <paramref name="password"/> are null or invalid.</exception>
         public CredentialInfo(string user, string password)
         {
             if (string.IsNullOrWhiteSpace(user)) throw new ArgumentNullException(nameof(user), "The parameter is required to connect to the repository.");
             if (string.IsNullOrWhiteSpace(password)) throw new ArgumentNullException(nameof(password), "The parameter is required to connect to the repository.");
-            // FINSIHE THE COMMENTS FOR THE CONSTRUCTORS AND THE LOGIC.
+            
             User = user;
             Password = password;
             IsEncrypted = false;
-            Decryptor = new LegacyDecryption();
+            Decryptor = input => input;
         }
 
-        public CredentialInfo(string user, string password, bool isEncrypted, IDecryptor decryptor)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CredentialInfo"/> class with the <paramref name="user"/>, <paramref name="password"/>, and <paramref name="decryptor"/>
+        /// used to convert <paramref name="user"/> and <paramref name="password"/> to plain text values and authenticate with the security repository.
+        /// </summary>
+        /// <param name="user">The identifier used to authenticate with the security repository. This is not assumed to be in plain text.</param>
+        /// <param name="password">The unique code used to authenticate with the security repository. This is not assumed to be in plain text.</param>
+        /// <param name="decryptor">The <see cref="Delegate"/> used to convert <paramref name="user"/> and <paramref name="password"/> to their 
+        /// plain text values.</param>
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="user"/>, <paramref name="password"/>, and <paramref name="decryptor"/> are null
+        /// or invalid.</exception>
+        public CredentialInfo(string user, string password, Func<string, string> decryptor)
         {
             if (string.IsNullOrEmpty(user)) throw new ArgumentNullException(nameof(user), "The user is required to connect to the repository.");
-            if(string.IsNullOrWhiteSpace(password)) throw new ArgumentNullException(nameof(password), "The password is required to connect to the repository.");
-            if (isEncrypted == true && decryptor == null) throw new ArgumentNullException(nameof(decryptor), "Decryptor is required if the credential values are encrypted.");
+            if (string.IsNullOrWhiteSpace(password)) throw new ArgumentNullException(nameof(password), "The password is required to connect to the repository.");
 
             User = user;
             Password = password;
-            IsEncrypted = isEncrypted;
-            Decryptor = decryptor;
+            IsEncrypted = true;
+            Decryptor = decryptor ?? throw new ArgumentNullException(nameof(password), "The decryptor is required to convert the security credentials to plain text values.");
         }
     }
 }
