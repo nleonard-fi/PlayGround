@@ -6,6 +6,7 @@ using System.ServiceModel.Channels;
 using FI.ECM.SecurityManagement.Exceptions;
 using Microsoft.Extensions.Logging.Abstractions;
 using FI.ECM.SecurityManagement.SecurityManagementSoa;
+using System.Security.Cryptography.Pkcs;
 
 namespace FI.ECM.SecurityManagement
 {
@@ -24,7 +25,8 @@ namespace FI.ECM.SecurityManagement
         /// <param name="environmentConfiguration">The <see cref="EnvironmentConfiguration"/> to be used for determining endpoint binding information.</param>
         /// <param name="accessCredentials">The <see cref="CredentialInfo"/> for authenticating with the security repository.</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="accessCredentials"/> are missing.</exception>
-        public SecurityManagementSoaRepository(ILogger<SecurityManagementSoaRepository> logger, EnvironmentConfiguration environmentConfiguration, CredentialInfo accessCredentials)
+        public SecurityManagementSoaRepository(EnvironmentConfiguration environmentConfiguration, CredentialInfo accessCredentials, 
+            ILogger<SecurityManagementSoaRepository> logger = null)
         {
             _logger = logger ?? NullLogger<SecurityManagementSoaRepository>.Instance;
             _credentialInfo = accessCredentials ?? throw new ArgumentNullException(nameof(accessCredentials), "SoaSecurity access credentials are required.");
@@ -41,8 +43,8 @@ namespace FI.ECM.SecurityManagement
         /// <param name="endpointConfiguration">The <see cref="EndpointConfiguration"/> specifying the SOAP version to be used for the endpoint in the repository.</param>
         /// <param name="accessCredentials">The <see cref="CredentialInfo"/> for authenticating with the security repository.</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="accessCredentials"/> are missing.</exception>
-        public SecurityManagementSoaRepository(ILogger<SecurityManagementSoaRepository> logger, EnvironmentConfiguration environmentConfiguration, 
-            EndpointConfiguration endpointConfiguration, CredentialInfo accessCredentials)
+        public SecurityManagementSoaRepository(EnvironmentConfiguration environmentConfiguration, EndpointConfiguration endpointConfiguration, CredentialInfo accessCredentials, 
+            ILogger<SecurityManagementSoaRepository> logger = null)
         {
             _logger = logger ?? NullLogger<SecurityManagementSoaRepository>.Instance;
             _credentialInfo = accessCredentials ?? throw new ArgumentNullException(nameof(accessCredentials), "SoaSecurity access credentials are required.");
@@ -60,14 +62,14 @@ namespace FI.ECM.SecurityManagement
         /// <param name="accessCredentials">The <see cref="CredentialInfo"/> for authenticating with the security repository.</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="endpointAddress"/> or <paramref name="accessCredentials"/> are missing.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="endpointAddress"/> is not in a correct <see cref="Uri"/> non-file format.</exception>
-        public SecurityManagementSoaRepository(ILogger<SecurityManagementSoaRepository> logger, Uri endpointAddress, CredentialInfo accessCredentials)
+        public SecurityManagementSoaRepository(Uri endpointAddress, CredentialInfo accessCredentials, ILogger<SecurityManagementSoaRepository> logger = null)
         {
             _logger = logger ?? NullLogger<SecurityManagementSoaRepository>.Instance;
             _credentialInfo = accessCredentials ?? throw new ArgumentNullException(nameof(accessCredentials), "SoaSecurity access credentials are required.");
 
             if (endpointAddress == null)
                 throw new ArgumentNullException(nameof(endpointAddress), "SoaSecurity repository endpoint is required.");
-            else if(!endpointAddress.IsWellFormedOriginalString() || endpointAddress.IsFile || !endpointAddress.IsAbsoluteUri) 
+            else if(!endpointAddress.IsWellFormedOriginalString() || !endpointAddress.IsAbsoluteUri || endpointAddress.IsFile) 
                 throw new ArgumentException("The SoaSecurity repository parameter is not in the correct format.", nameof(endpointAddress));
             else
                 _soa = new SecurityManagementSoapClient(EndpointConfiguration.SecurityManagementSoap12, endpointAddress.AbsoluteUri);
@@ -85,16 +87,16 @@ namespace FI.ECM.SecurityManagement
         /// <param name="accessCredentials">The <see cref="CredentialInfo"/> for authenticating with the security repository.</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="endpointAddress"/> or <paramref name="accessCredentials"/> are missing.</exception>
         /// <exception cref="ArgumentException">Thrown when <paramref name="endpointAddress"/> is not in a correct <see cref="Uri"/> non-file format.</exception>
-        public SecurityManagementSoaRepository(ILogger<SecurityManagementSoaRepository> logger, Uri endpointAddress, EndpointConfiguration endpointConfiguration,
-            CredentialInfo accessCredentials)
+        public SecurityManagementSoaRepository(Uri endpointAddress, EndpointConfiguration endpointConfiguration, CredentialInfo accessCredentials, 
+            ILogger<SecurityManagementSoaRepository> logger = null)
         {
             _logger = logger ?? NullLogger<SecurityManagementSoaRepository>.Instance;
             _credentialInfo = accessCredentials ?? throw new ArgumentNullException(nameof(accessCredentials), "SoaSecurity access credentials are required.");
 
             if (endpointAddress == null)
                 throw new ArgumentNullException(nameof(endpointAddress), "SoaSecurity repository endpoint is required.");
-            else if (!endpointAddress.IsWellFormedOriginalString() || endpointAddress.IsFile || !endpointAddress.IsAbsoluteUri)
-                throw new ArgumentException("The SoaSecuirty repository parameter is not in the correct format.", nameof(endpointAddress));
+            else if (!endpointAddress.IsWellFormedOriginalString() || !endpointAddress.IsAbsoluteUri || endpointAddress.IsFile)
+                throw new ArgumentException("The SoaSecurity repository parameter is not in the correct format.", nameof(endpointAddress));
             else
                 _soa = new SecurityManagementSoapClient(endpointConfiguration, endpointAddress.AbsoluteUri);
         }
@@ -112,14 +114,14 @@ namespace FI.ECM.SecurityManagement
         /// <exception cref="ArgumentNullException">Thrown if <paramref name="binding"/>, <paramref name="endpointAddress"/>, 
         /// or <paramref name="accessCredentials"/> are missing.</exception>
         /// <exception cref="ArgumentException">Thrown if <paramref name="endpointAddress"/> is not in a correct <see cref="Uri"/> non-file format.</exception>
-        public SecurityManagementSoaRepository(ILogger<SecurityManagementSoaRepository> logger, Uri endpointAddress, Binding binding, CredentialInfo accessCredentials)
+        public SecurityManagementSoaRepository(Uri endpointAddress, Binding binding, CredentialInfo accessCredentials, ILogger<SecurityManagementSoaRepository> logger = null)
         {
             _logger = logger ?? NullLogger<SecurityManagementSoaRepository>.Instance;
             _credentialInfo = accessCredentials ?? throw new ArgumentNullException(nameof(accessCredentials), "SoaSecurity access credentials are required.");
 
             if (endpointAddress == null)
                 throw new ArgumentNullException(nameof(endpointAddress), "SoaSecurity repository endpoint is required.");
-            else if (!endpointAddress.IsWellFormedOriginalString() || endpointAddress.IsFile || !endpointAddress.IsAbsoluteUri)
+            else if (!endpointAddress.IsWellFormedOriginalString() || !endpointAddress.IsAbsoluteUri || endpointAddress.IsFile)
                 throw new ArgumentException("The SoaSecurity repository parameter is not in the correct format.", nameof(endpointAddress));
 
             if (binding == null) throw new ArgumentNullException(nameof(binding), "The SoaSecurity repository parameter is required.");
@@ -138,7 +140,7 @@ namespace FI.ECM.SecurityManagement
         /// <param name="accessCredentials">The <see cref="CredentialInfo"/> for authenticating with the security repository.</param>
         /// <exception cref="ArgumentNullException">Thrown if <paramref name="endpointAddress"/> or <paramref name="accessCredentials"/> are missing.</exception>
         /// <exception cref="ArgumentException">Thrown if <paramref name="endpointAddress"/> is not in a correct <see cref="Uri"/> non-file format.</exception>
-        public SecurityManagementSoaRepository(ILogger<SecurityManagementSoaRepository> logger, string endpointAddress, CredentialInfo accessCredentials)
+        public SecurityManagementSoaRepository(string endpointAddress, CredentialInfo accessCredentials, ILogger<SecurityManagementSoaRepository> logger = null)
         {
             _logger = logger ?? NullLogger<SecurityManagementSoaRepository>.Instance;
             _credentialInfo = accessCredentials ?? throw new ArgumentNullException(nameof(accessCredentials), "SoaSecurity access credentials are required.");
@@ -146,8 +148,8 @@ namespace FI.ECM.SecurityManagement
             if (string.IsNullOrWhiteSpace(endpointAddress))
                 throw new ArgumentNullException(nameof(endpointAddress), "SoaSecurity repository endpoint is required.");
             
-            var endpoint = new Uri(endpointAddress);
-            if (!endpoint.IsWellFormedOriginalString() || endpoint.IsFile || !endpoint.IsAbsoluteUri)
+            bool created = Uri.TryCreate(endpointAddress, UriKind.Absolute, out Uri endpoint);
+            if (!created || !endpoint.IsWellFormedOriginalString() || endpoint.IsFile)
                 throw new ArgumentException("The SoaSecurity repository parameter is not in the correct format.", nameof(endpointAddress));
             else
                 _soa = new SecurityManagementSoapClient(EndpointConfiguration.SecurityManagementSoap12, endpoint.AbsoluteUri);
@@ -165,8 +167,8 @@ namespace FI.ECM.SecurityManagement
         /// <param name="accessCredentials">The <see cref="CredentialInfo"/> for authenticating with the security repository.</param>
         /// <exception cref="ArgumentNullException">Thrown if <paramref name="endpointAddress"/> or <paramref name="accessCredentials"/> are missing.</exception>
         /// <exception cref="ArgumentException">Thrown if <paramref name="endpointAddress"/> is not in a correct <see cref="Uri"/> non-file format.</exception>
-        public SecurityManagementSoaRepository(ILogger<SecurityManagementSoaRepository> logger, string endpointAddress, EndpointConfiguration endpointConfiguration, 
-            CredentialInfo accessCredentials)
+        public SecurityManagementSoaRepository(string endpointAddress, EndpointConfiguration endpointConfiguration, 
+            CredentialInfo accessCredentials, ILogger<SecurityManagementSoaRepository> logger = null)
         {
             _logger = logger ?? NullLogger<SecurityManagementSoaRepository>.Instance;
             _credentialInfo = accessCredentials ?? throw new ArgumentNullException(nameof(accessCredentials), "SoaSecurity access credentials are required.");
@@ -174,8 +176,8 @@ namespace FI.ECM.SecurityManagement
             if (string.IsNullOrWhiteSpace(endpointAddress))
                 throw new ArgumentNullException(nameof(endpointAddress), "SoaSecurity repository endpoint is required.");
 
-            var endpoint = new Uri(endpointAddress);
-            if (!endpoint.IsWellFormedOriginalString() || endpoint.IsFile || !endpoint.IsAbsoluteUri)
+            bool created = Uri.TryCreate(endpointAddress, UriKind.Absolute, out Uri endpoint);
+            if (!created || !endpoint.IsWellFormedOriginalString() || endpoint.IsFile)
                 throw new ArgumentException("The SoaSecurity repository parameter is not in the correct format.", nameof(endpointAddress));
             else
                 _soa = new SecurityManagementSoapClient(endpointConfiguration, endpointAddress);
@@ -194,7 +196,7 @@ namespace FI.ECM.SecurityManagement
         /// <exception cref="ArgumentNullException">Thrown if <paramref name="binding"/>, <paramref name="endpointAddress"/>,
         /// <paramref name="accessCredentials"/> are missing.</exception>
         /// <exception cref="ArgumentException">Thrown if <paramref name="endpointAddress"/> is not in a correct <see cref="Uri"/> non-file format.</exception>
-        public SecurityManagementSoaRepository(ILogger<SecurityManagementSoaRepository> logger, string endpointAddress, Binding binding, CredentialInfo accessCredentials)
+        public SecurityManagementSoaRepository(string endpointAddress, Binding binding, CredentialInfo accessCredentials, ILogger<SecurityManagementSoaRepository> logger = null)
         {
             _logger = logger ?? NullLogger<SecurityManagementSoaRepository>.Instance;
             _credentialInfo = accessCredentials ?? throw new ArgumentNullException(nameof(accessCredentials), "SoaSecurity access credentials are required.");
@@ -202,8 +204,8 @@ namespace FI.ECM.SecurityManagement
             if (string.IsNullOrWhiteSpace(endpointAddress))
                 throw new ArgumentNullException(nameof(endpointAddress), "SoaSecurity repository endpoint is required.");
 
-            var endpoint = new Uri(endpointAddress);
-            if (!endpoint.IsWellFormedOriginalString() || endpoint.IsFile || !endpoint.IsAbsoluteUri)
+            bool created = Uri.TryCreate(endpointAddress, UriKind.Absolute, out Uri endpoint);
+            if (!created || !endpoint.IsWellFormedOriginalString() || endpoint.IsFile)
                 throw new ArgumentException("The SoaSecurity repository parameter is not in the correct format.", nameof(endpointAddress));
 
             if (binding == null) throw new ArgumentNullException(nameof(binding), "The SoaSecurity repository parameter is required.");
